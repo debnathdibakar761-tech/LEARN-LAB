@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Exercise</title>
+    <style>
+          /* .js-odd{
+            background-color: blue;
+          }
+          .js-even{
+            background-color: brown;
+          } */
+
+
+    </style>
+
+
+
+</head>                
+<body>
+   <!-- <h3 id="greeting"></h3> -->
+   <!-- <button style="height: 50px; width: 50px; font-size: 25px; border: none; border-radius: 5px;" id="my-button" onclick="buttonPressed();">0</button> -->
+  
+   <!-- <button id="my-button">click me</button> -->
+
+
+<!-- l
+------------------------------------------------ -->
+    <script>
+//--------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+//--------------------------------------------------------
+// let arr = [1,2,3,4,5,];
+// let squares = arr.map ((a) => {
+//     return a * a ;
+// });
+// console.log(squares);
+//---------------------------------------------------
+// let buttonElement = document.querySelector('#my-button');
+// buttonElement.addEventListener('click', event => console.log(' they clicked me again....'));
+//----------------------------------------------------------
+// let buttonElement = document.querySelector('#my-button');
+// let behaviour = event => console.log(' they clicked me again....clicked clicked')
+// buttonElement.addEventListener('click', behaviour);
+
+// let printDate = event => console.log(new Date ());
+// buttonElement.addEventListener('click', printDate);
+// buttonElement.removeEventListener('click', behaviour);
+//---------------------------------------------------
+
+// let names = ['ramesh', 'suresh', 'rameesh', 'suresh', 'mithun'];
+
+// names.forEach( function(i) {
+//     console.log(i);
+// });
+// names.forEach((numm) => console.log(numm));
+
+//---------------------------------------------------
+// let alarm = () => console.log(`its 5 am, please wake up  honey ${new Date()}`);
+//  let intervalIdddd = setInterval(alarm, 1000);
+//  setTimeout(() => clearInterval(intervalIdddd), 10000);
+//--------------------------------------------
+// let sumTwoNumber = function (num1 , num2) {
+//     return num1 + num2;
+// }
+//  let sumThreeNUmbers = function (num1 , num2, num3 , sumTwoNUmbers){
+//     let sum1 = sumTwoNUmbers  (num1, num2);
+//     return sumTwoNUmbers (sum1,num3)
+//  }
+//  console.log(sumThreeNUmbers(3,4,15,sumTwoNumber));
+//  console.log(sumThreeNUmbers);
+//  console.log(typeof sumThreeNUmbers)
+ //-----------------------------------------------------------
+// let sum1 = (num1 , num2) => {
+//   return num1 + num2;
+// }
+// console.log(sum1(9,9));
+// let square = num => {
+//   return num * num;
+// }
+// console.log(square(9,9));
+// let square = num => num * num ;
+// let sum = (a , b) => a + b ;
+// console.log(sum(50,5));
+// console.log(square(5));
+//--------------------------------------------------
+// let alarm = function (){
+//     console.log('its 5.30 am, please weak  up............')
+// }
+// setTimeout(alarm , 1500);
+// console.log('alarm set')
+//---------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+//---------------------------------------------------
+// let arr = ['i' , 'love' , 'germany' , 'and' , 'in 2 years' , 'i' , 'will' , 'be' , 'there']
+// let result = '';
+// for (let i = 0 ; i < arr.length; i ++) {
+//     result = result + arr[i] + ' ' ;
+// }
+// console.log(result);
+// console.log(arr.join(','))
+//----------------------------------------------------
+
+// let num = [1, -6,5,7,-98];
+// for (let i = 0 ; i < num.length ; i++ ) {
+//     if (num[i] < 0) {
+//         continue
+//     }else{
+//         console.log(num[i])
+//     }
+// }
+//-----------------------------------------------------
+// let arr = [5,6];
+// arr.push(7);
+// arr.unshift(4);
+// console.log(arr);
+//-------------------------------------------------
+// function getElement (arr, position){
+//     return arr [position-1];
+// }
+// let arr = [1,2,3,4,5,6,7,8,19,]
+// console.log(getElement(arr,9))
+//--------------------------------------------------
+// function arrCopy (arr) {
+//     return arr.slice (0,arr.length)
+// }
+// let  arr = [4,5,6,7,88,90,]
+// let arr2 =arrCopy(arr);
+// arr2[0]= null;
+// console.log(arr);
+// console.log(arr2);
+//---------------------------------------------------
+
+// let num = 10 ;
+// while (num > 0) {
+//     console.log(num);
+//     num -- ;
+// }
+
+//---------------------------------------------------
+
+
+//--------------------------------------------------
+//  function isPrime (num) {
+//     for (let i=2 ; i < num ; i++){
+//         if(num % i == 0){
+//             return false;
+// //         }
+// //     }
+//     return true;
+//  }
+//  let num = 2;
+//  let i = 0;
+//  while (i < 15){
+//     if (isPrime(num)) {
+//         console.log(num);
+//         i++;
+//     }
+//     num ++;
+
+//  }
+ 
+// //-----------------------------------------------------
+//  function isPrime (num) {
+//     for (let i=2 ; i < num ; i++){
+//         if(num % i == 0){
+//             return false;
+//         }
+//     }
+//     return true;
+//  }
+//  let num = 2;
+//  let i = 0;
+//  while (i < 15){
+//     if (isPrime(num)) {
+//         console.log(num);
+//         i++;
+//     }
+//     num ++;
+
+//  }
+
+
+
+
+//--------------------------------------------------
+// let nums = [2,3,4,5,6,7,8,9,]
+// let squares = [];
+// let mul = [];
+// for (let i = 0 ; i < nums.length ; i ++ ) {
+//     squares.push(nums[i] * nums[i]);
+//    mul.push( i * i );
+// }
+// console.log(squares);
+// console.log(mul);
+
+//---------------------------------------------------
+// let nums = [3,6,7,9,4,10];
+// let sum = 0 ;
+// for (let i = 0 ; i < nums.length; i ++) {
+//     sum = sum +nums[i];
+// }
+// console.log(sum);
+//-----------------------------------------------------------
+// let numbers = [1,2,3,7,5,6,99,null,true,'dibaakar'];
+// let newNum= numbers;
+// newNum[0] = 25  ;
+// console.log(numbers);
+// numbers.sort();
+// console.log(numbers);
+// console.log (numbers.valueOf());
+// console.log(numbers.toString());
+// numbers.splice(5,2);
+// console.log(numbers);
+// console.log(numbers);
+// console.log(numbers[6]);
+// numbers.push('punam');
+// console.log(numbers);
+// numbers.pop();
+// console.log(numbers);
+
+//-------------------------------------------------
+//   let noOfTimesClick = 0;
+//   function buttonPressed(){
+    
+//     noOfTimesClick ++
+//     updateButton();
+//  }
+
+//  function updateButton (){
+//     let button = document.querySelector('#my-button');
+//        if (noOfTimesClick % 2 === 0) {
+//         button.classList.remove('js-odd');
+//         button.classList.add('js-even');
+//     }else{
+//         button.classList.remove('js-even');
+//         button.classList.add('js-odd')
+//     }
+//      button.innerText = noOfTimesClick;
+
+//  } 
+// updateButton();
+
+//------------------------------------------------
+
+// function doGreeting (name = 'Dear') {
+//    let date = new Date();
+//    let hours = date.getHours()
+//    let heading = document.querySelector('#greeting')
+//    if (hours > 5 && hours <12) {
+//        heading.innerText = `Good Morning ${name}`;
+//    } else if (hours > 12 && hours < 18) {
+//        heading.innerText =`Good afternoon ${name}`;
+//    }else {
+//        heading.innerText = `Good Night ${name}`;
+//    }
+// }
+// doGreeting();
+// doGreeting('punam');
+// doGreeting('dibaakar');
+//----------------------------------------------
+// let button = document.createElement('Button');
+// document.querySelector('.my-div').appendChild(button);
+// button.innerText= 'click me'
+// document.querySelector('.my-div').removeChild(button);
+
+//------------------------------------------
+// let myDate = new Date ();
+// console.log(myDate);
+// console.log(myDate.getFullYear());
+// console.log(myDate.getHours());
+// console.log(myDate.getDay())
+
+//-------------------------------------------------
+// let product = {
+//         name : 'tshirt',
+//         price : 789 ,
+//         rating : {
+//             stars : 4.5 ,
+//             reviews : 453,
+//         }
+//     };
+// localStorage.setItem('product', JSON.stringify(product));
+// console.log(localStorage.getItem('product'));
+// let product2 = JSON.parse(localStorage.getItem('product'));
+// console.log(product2);
+// localStorage.removeItem('price');
+// localStorage.clear();
+
+//-----------------------------------------------
+  
+    // localStorage.setItem('name', 'KG coding');
+    // localStorage.setItem('price', '8976');
+    // console.log(localStorage.getItem('name'));
+    // console.log(localStorage.getItem('price'));
+
+//--------------------------------------------------
+    // let product = {
+    //     name : 'tshirt',
+    //     price : 789 ,
+    //     rating : {
+    //         stars : 4.5 ,
+    //         reviews : 453,
+    //     }
+    // };
+    // console.log(product);
+    // let str = JSON.stringify(product);
+    // console.log(str)
+    // let newProduct = JSON.parse(str);
+    // console.log(newProduct);
+//---------------------------------------------------------------
+//   function isIdenticaalProduct (product1 , product2) {  
+//      if (typeof product1 !== 'object' || typeof product2 !== 'object'){
+//         console.log('parameter passed was not an object')
+//      }else if (product1 == product2) {
+//          return true ;
+//      } else if (product1.name === product2.name && product1.size  ===  product2.size &&    product1.fit === product2.fit) {
+//          return true;
+//      } else {
+//          return false;
+//      }
+//   }
+//    let producta = {
+//         size : 's' ,
+//         name : 'jeans',
+//         fit : 'slim fit',
+//         'delivery-time': 'same day delivery',
+//     };
+//      let productb = {
+//         size : 's' ,
+//         name : 'jeans',
+//         fit : 'slim fit',
+//         'delivery-time': 'same day delivery',
+//     };
+//     console.log(isIdenticaalProduct(producta, productb))
+//     console.log(isIdenticaalProduct(producta, ''))
+//     console.log(isIdenticaalProduct(producta, producta))
+
+//------------------------------------------------------
+// let obj = {
+//     message : 'good job',
+//     status : 'complete',
+// };
+// console.log(obj);
+// let {status , message} = obj ;
+// console.log(message);
+// console.log(status);
+//-----------------------------------------------
+
+    //  let product = {
+    //     size : 's' ,
+    //     name : 'jeans',
+    //     fit : 'slim fit',
+    //     'delivery-time': 'same day delivery',
+    // };
+    // console.log(product['delivery-time'])
+
+//--------------------------------------------------
+    // let product = {
+    //     size : 's' ,
+    //     name : 'jeans',
+    //     fit : 'slim fit',
+    // };
+    // console.log(product);
+    // let copyProduct = product ;
+    // console.log (product);
+    // copyProduct.size = 'm' ;
+    // console.log(product);
+    // copyProduct.fit = 'regular fit';
+    // console.log(product);
+//--------------------------------------------------
+// object destructuring 
+//    let product = {
+//     company : 'Mango' ,
+//     price : 861,
+//     'item-name' : 'T-shirt' ,
+//    };
+//    let {company, price} = product ;
+//    console.log(company);
+//    console.log(price);
+
+//---------------------------------------------------
+
+// console.log ('ThiS iS kG cOdinG'.toUpperCase());
+// console.log ('this is kg, and kg says welcome to  kg coding' . replaceAll('kg' , 'knowledge gate'));
+
+//----------------------------------------------------
+    // let product = {
+    //     company : 'Apple',
+    //     model : 'iphone 14 pro max',
+    //     price : 250 , 
+    //     displayPrice : function () {
+    //        console.log (`price of the product is ₹${this.price}`); 
+    //     } 
+    //   }
+
+
+    // product.displayPrice();
+
+    // console.log(product);
+    // // console.log(product.model)
+
+    // // product.company = 'Banana'
+    // // console.log (product);
+    // // console.log(product['price']);
+
+    // delete product.company ;
+    // console.log(product) ;
+    // delete product.model ;
+    // console.log (product);
+  
+//-------------------------------------------------------
+    // function toFahrenheit (celciusValue) {
+    //     return 9/5*celciusValue + 32 ;
+    // }
+    // console.log (toFahrenheit(38))
+    // console.log (toFahrenheit(0))
+    // console.log (toFahrenheit(100))
+//--------------------------------------------------------
+
+    // function findLarger (num1 , num2) {
+    //   return num1 > num2 ? num1 : num2 ;
+    // }
+
+    // console.log(findLarger(2,20))
+    // console.log(findLarger(20,2))
+    // console.log(findLarger(0,0))
+
+//--------------------------------------------------
+    // function isOddorNot (number) {
+    //     if (number % 2 === 0) {
+    //         return 'even' ;
+    //     } else {
+    //         return 'odd' ;
+    //    }
+    // }
+
+    // console.log(isOddorNot(3)); 
+    // console.log(isOddorNot(5));
+    // console.log(isOddorNot(3));  
+    // console.log(isOddorNot(0));
+    // console.log(isOddorNot(9999));
+//---------------------------------------------------
+    // function isOdd(number) {
+    //     let rem = number % 2 ;
+    //     let isOdd = rem == 1 ;
+    //     return isOdd ;  
+    //   }
+
+    //   console.log(isOdd(21));
+    //   console.log(isOdd(211));
+    //   console.log(isOdd(13));
+    //   console.log(isOdd(12));
+
+//----------------------------------------------------         
+    // let age = 78 ;
+    // if (age >= 18 && age <= 60) {
+    // console.log('you can drive');
+    // }
+    // else  {
+    // console.log('you cannot drive, sorry.....');
+    // }
+//----------------------------------------------------------
+    // let age = 31 ;
+    // if (age >= 18) {
+    //     result = 'adult';
+    // } else {
+    //     result = 'child';
+    // }
+    // console.log (result);
+//----------------------------------------------------------
+    // let result = age >= 18 ? 'adult' : 'child' ;
+//----------------------------------------------------------
+//    gaurd operator
+//    let age  ;
+//    let finalAge = age || 18 ;
+//    console.log(age);
+//    console.log (finalAge);
+//----------------------------------------------------------
+//   default operator
+//   let age  ;
+//   let finalAge = age ?? 18 ;
+//   console.log(age);
+//   console.log (finalAge);
+//-----------------------------------------------------------
+    // let age = 70 ;
+    // let gender = 'female';
+    // let finalDiscount ;
+
+    // if (age <= 5) {
+    //     finalDiscount = 100 ;
+    // }else if (gender === 'female' || age <= 8) {
+    //     finalDiscount = 50 ;
+    // }else if (age  >= 65) {
+    //     finalDiscount = 30 ;
+    // }else {
+    //     finalDiscount = 0 ;
+    // }
+    // console.log(`Your final discount is ${finalDiscount}%`);
+//------------------------------------------------------------- 
+
+//     let age  ;
+//     function displayAge (age){
+//            console.log (` your age is ${age}`);
+//     }
+//    displayAge(3132);
+//-------------------------------------------------------------
+    // function generateRandomNumber () {
+    //     let random = Math.floor(Math.random() * 3);
+    //     let randomMove = random  ;
+    //     return randomMove ;
+    // }
+
+    // console.log(generateRandomNumber());
+    // console.log(generateRandomNumber());
+    // console.log(generateRandomNumber());
+    // console.log(generateRandomNumber());
+    // console.log(generateRandomNumber());
+//---------------------------------------------------------------
+    </script>
+</body>
+</html>
