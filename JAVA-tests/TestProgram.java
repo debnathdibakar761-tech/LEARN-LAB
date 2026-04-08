@@ -40,13 +40,29 @@ public class TestProgram {
 // boolean isPalin = isPalindrome(num);
 // System.out.println(isPalin);
 //-----------------------------------------------------------------
-  int [] arr1 = inputputArray();
-  int [] arr2 = inputputArray();
-  int [] merged =  merge(arr1, arr2) ;
-  System.out.println(Arrays.toString(merged));
+//   int [] arr1 = inputputArray();
+//   int [] arr2 = inputputArray();
+//   int [] merged =  merge(arr1, arr2) ;
+//   System.out.println(Arrays.toString(merged));
+//------------------------------------------------------------------
 
+// int [][]arr = input2DArray();
+// System.out.println("now enter the number you want to search :  ");
+// int num = input.nextInt();
+// boolean isFound = searchNumIn2dArray(arr, num);
+//    if(isFound) System.out.println("yes the num is there in the array");
+//    else System.out.println("sorry, the number is not there in the array");
+//--------------------------------------------
+// for (int [] row : arr){
+//     System.out.println(Arrays.toString(row));
+// }
 
-
+//-----------------------------------------------------------------
+int [] [] arr = input2DArray();
+long sum = sum(arr);
+double avg = average2D(arr);
+System.out.println("the sum of the array is " + sum );
+System.out.println("the average of the array is " + avg);
 
 
 
@@ -61,14 +77,70 @@ public class TestProgram {
 
 
 
+//------------------------------------------------------------------------
+public static long sum (int [] [] array ){
+    long sum = 0 ;
+    for (int i = 0 ; i <array.length ; i++){
+        for(int j = 0 ; j < array[i].length ; j++){
+
+            sum = sum + array[i] [j];
+        }
+    }
+    return sum;
+}
+
+public static double average2D (int [] [] array){
+    long sum = sum(array);
+    int totalElements = 0 ;
+        for(int i = 0 ; i < array.length ; i++){
+            totalElements = totalElements + array[i].length;
+        }
+
+    double avg = (double) sum / totalElements;
+
+    return avg;
+}
 
 
 
 
 
+
+
+
+
+//----------------------------------------------------------------------
+public static boolean searchNumIn2dArray (int [][] array  , int num){
+    for (int i = 0 ; i < array.length ; i++) {
+        for (int j = 0 ; j < array[i].length ; j++){
+            if (array[i][j] == num) {
+                return true;
+            }
+        }
+    }
+    return false;
+}
 //-------------------------------------------------------------------------
 
+public static int [] [] input2DArray() {
+ System.out.println("Enter number of rows:  ");
+ int rows = input.nextInt();
 
+ System.out.println("Enter number of columns:  ");
+ int cols = input.nextInt();
+
+ int [][] arr = new int [rows] [cols];
+
+
+    for (int i = 0 ;  i < rows;  i++){
+        for (int k = 0 ; k < cols ; k++ ) {
+             System.out.println("Enter value for row " + (i +1) + " coloum " + (k+1) + " :  ");
+            arr[i] [k] = input.nextInt();
+    }  
+ }
+    return arr;
+}
+//---------------------------------------------------------
 public static int[] merge (int[]arr1, int[]arr2){
     int newSize = arr1.length + arr2.length;
     int []newArr = new int [newSize] ;
@@ -101,12 +173,6 @@ public static int[] merge (int[]arr1, int[]arr2){
           return newArr;
 
 }
- 
-
-
-
-
-
 //----------------------------------------------------------------------
 public static boolean isPalindrome (int [] array) {
     int i = 0;
