@@ -16,26 +16,20 @@ public class TestProgram {
 // int num = input.nextInt();
 // int count = noOfOccurrences(numbers , num);
 // System.out.println("Occurrences of  " + num + " = " + count);
-
 //----------------------------------------------------------------------
-
 // int [] numbers = inputputArray();
 // int max = findMax(numbers);
 // int min = findMin(numbers);
 // System.out.println("minimun number in the array is " + min);
 // System.out.println("maximum number in the array is " + max);
 //---------------------------------------------------------------------
-
 // int [] arr = inputputArray();
 // System.out.println(isSorted(arr));
-
 //-------------------------------------------------------------------
 // int[] arr = inputputArray();
 // reverse(arr);
 // System.out.println(Arrays.toString(arr));
-
 //------------------------------------------------------------------
-
 // int [] num = inputputArray();
 // boolean isPalin = isPalindrome(num);
 // System.out.println(isPalin);
@@ -45,7 +39,6 @@ public class TestProgram {
 //   int [] merged =  merge(arr1, arr2) ;
 //   System.out.println(Arrays.toString(merged));
 //------------------------------------------------------------------
-
 // int [][]arr = input2DArray();
 // System.out.println("now enter the number you want to search :  ");
 // int num = input.nextInt();
@@ -56,21 +49,94 @@ public class TestProgram {
 // for (int [] row : arr){
 //     System.out.println(Arrays.toString(row));
 // }
-
 //-----------------------------------------------------------------
-int [] [] arr = input2DArray();
-long sum = sum(arr);
-double avg = average2D(arr);
-System.out.println("the sum of the array is " + sum );
-System.out.println("the average of the array is " + avg);
+// int [] [] arr = input2DArray();
+// long sum = sum(arr);
+// double avg = average2D(arr);
+// System.out.println("the sum of the array is " + sum );
+// System.out.println("the average of the array is " + avg);
+//-----------------------------------------------------------
+//  System.out.println("PLEASE ENTER YOUR FIRST NUMBER :");
+//  int num1 = input . nextInt();
+
+//  System.out.println("PLEASE ENTER YOUR SECOND NUMBER :");
+//  int num2 = input.nextInt();
+//  int graterNumber ;
+
+//   if  (num1 > num2){
+//     graterNumber = num1;
+ 
+//   }else {
+//     graterNumber = num2;
+
+//   }
+//   System.out.println("greater number is " + graterNumber);
+//---------------------------------------------------------------
+// System.out.println("PLEASE ENTER YOUR FIRST NUMBER :");
+//  int num1 = input . nextInt();
+ 
+//  System.out.println("PLEASE ENTER YOUR SECOND NUMBER :");
+//  int num2 = input.nextInt();
+//  int graterNumber = num1 > num2 ? num1 : num2;
+
+//  System.out.println("greater number is " + graterNumber + " .thank you visit again");
+ //--------------------------------------------------------------------------------
+// System.out.println("welcome to the day of the week detecter");
+// System.out.println("Enter your day in number :");
+// int day = input .nextInt();
+
+// switch (day) {
+//     case 1: System.out.println("Monday");
+//         break;
+//     case 2: System.out.println("Tuesday");
+//         break;
+//     case 3:System.out.println("Wednesday");
+//         break;
+//     case 4:System.out.println("Thrusday");
+//         break;
+//     case 5:System.out.println("Friday");
+//         break;
+//     case 6:System.out.println("saturday");
+//         break;
+//     case 7:System.out.println("sunday");
+//         break;
+//     default:System.out.println("invalid day");
+//         break;
+// }
+//-------------------------------------------------------------------------
+System.out.println("welcome to the day of the week detecter");
+System.out.println("Enter your day in number :");
+int day = input .nextInt();
+
+    String DayStr = switch (day){
+    case 1 -> "Monday";
+    case 2 -> "Tuesday";
+    case 3 -> "Wednesday";
+    case 4 -> "Thrusday";
+    case 5 -> "friday";
+    case 6 -> "saturday";
+    case 7 -> "Sunday";
+    default -> "Invalid day";
+
+    };
+    System.out.println(DayStr);
 
 
-
-
-     
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^   
 }//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -100,15 +166,6 @@ public static double average2D (int [] [] array){
 
     return avg;
 }
-
-
-
-
-
-
-
-
-
 //----------------------------------------------------------------------
 public static boolean searchNumIn2dArray (int [][] array  , int num){
     for (int i = 0 ; i < array.length ; i++) {
@@ -228,7 +285,6 @@ public static boolean isDecreasing (int [] array){
    }
     return true;
 }
-
 //-----------------------------------------------------------------------
 public static int findMin (int [] array) {
    if (array.length == 0){
