@@ -104,45 +104,336 @@ public class TestProgram {
 //         break;
 // }
 //-------------------------------------------------------------------------
-System.out.println("welcome to the day of the week detecter");
-System.out.println("Enter your day in number :");
-int day = input .nextInt();
+// System.out.println("welcome to the day of the week detecter");
+// System.out.println("Enter your day in number :");
+// int day = input .nextInt();
+//     String DayStr = switch (day){
+//     case 1 -> "Monday";
+//     case 2 -> "Tuesday";
+//     case 3 -> "Wednesday";
+//     case 4 -> "Thrusday";
+//     case 5 -> "friday";
+//     case 6 -> "saturday";
+//     case 7 -> "Sunday";
+//     default -> "Invalid day";
+//     };
+//     System.out.println(DayStr);
+//------------------------------------------------------------------
+// System.out.print("Enter the first number  : ");
+// int a = input.nextInt();
 
-    String DayStr = switch (day){
-    case 1 -> "Monday";
-    case 2 -> "Tuesday";
-    case 3 -> "Wednesday";
-    case 4 -> "Thrusday";
-    case 5 -> "friday";
-    case 6 -> "saturday";
-    case 7 -> "Sunday";
-    default -> "Invalid day";
+// System.out.print("Enter the last number  : ");
+// int b = input.nextInt();
 
-    };
-    System.out.println(DayStr);
+// TestProgram obj = new TestProgram();
+// int min = obj.min(a, b); 
+// System.out.println("The minimum is : " + min);
+//--------------------------------------------------------------
+// System.out.print("Enter the number  : ");
+// int num = input.nextInt();
+// TestProgram obj = new TestProgram();
+// String result = obj.oddEven(num);
+// System.out.println("This number is  " + result);
+// --------------------------------------------------------------
+// System.out.println("Enter the number : ");
+// int num = input.nextInt();
+// TestProgram obj = new TestProgram();
+// int absoluteVal = obj.absoluteValue(num);
+// System.out.println("Absolute value is  " +absoluteVal);
+//------------------------------------------------------------------
+// System.out.println("Enter your mark in math : ");
+// int mark = input.nextInt();
+// String grade = (mark >= 90 ? "A" :
+//                (mark >= 80 ? "B" :
+//                (mark >= 70 ? "C" :
+//                (mark >= 60 ? "D" :
+//                (mark >= 50 ? "E" :"F")))));
+// System.out.println("Your grade is " + grade);
+//-----------------------------------------------------------------
+// System.out.println("Enter the number of the month  : ");
+// int monthNum = input.nextInt();
+// TestProgram obj = new TestProgram();
+// String month = obj.monthName(monthNum);
+// System.out.println("your month name is " + month);
+//-----------------------------------------------------------------
+// System.out.println("Enter num1 : ");
+// int num1 = input.nextInt();
+// System.out.println("Enter num2 : ");
+// int num2 = input.nextInt();
+// System.out.println("NOW ENTER WHICH OPERATION YOU WANT TO PERFORM >>[+-*/]");
+// char oparation = input.next().charAt(0);
+
+
+// switch (oparation) {
+//     case '+': 
+//         System.out.println("Result : " + (num1 + num2));
+//         break;
+//     case '-': 
+//         System.out.println("Result : " + (num1 - num2));
+//         break;
+//     case '*': 
+//         System.out.println("Result : " + (num1 * num2));
+//         break;
+//     case '/':
+//         if(num2 != 0) {
+//             System.out.println("Result : " + (num1 / num2));
+//         }else {
+//             System.out.println("Error: Division by zero is not allowed.");
+//         }
+//         break;
+//     default: System.out.println("Invalid operation entered");
+//         return;
+//     }
+//------------------------------------------------------------------------
+// int age ;
+// do {
+//     System.out.println("Enter your age : ");
+//      age = input.nextInt();
+
+// } while (age > 100 || age < 0) ; 
+//      System.out.println("You age is  " + age);
+//----------------------------------------------------------------------
+// int Age;
+// System.out.println("Enter your age : ");
+// Age = input.nextInt();
+
+// while (age > 100 || age < 0) {
+//     System.out.println("Enter your age : ");
+//     Age = input.nextInt();
+// }
+
+// System.out.println("Your age is " + Age);
+//---------------------------------------------------------------------------
+// for (int i = 1 ; i <=100 ; i++){
+//     System.out.print(i + " | ");
+// }
+//----------------------------------------------------------------------------
+// String [] nameArr = new String[]{
+//     "ram", "iron man" , "bruce banner" , "steve rogers" , "scott Lanng" , "null" , null , "Natasha",
+// };
+// System.out.println(Arrays.toString(nameArr));
+
+// for (int i = 0 ; i < nameArr.length ; i++) {
+//     System.out.println(nameArr[i]);
+// }
+//-----------------------------------------------------------------------------------------
+// String [] nameArr = new String[]{
+//     "ram", "iron man" , "bruce banner" , "steve rogers" , "scott Lanng" , "null" , null , "Natasha", "Black Panther"
+// };
+// for (String n : nameArr) {
+//     System.out.println(n);
+// }
+//-------------------------------------------------------------------------------------
+// System.out.println(factorial(10));
+// System.out.println(factorialR(5));
+//------------------------------------------------------------------------------------
+// isValidPassword();
+//--------------------------------------------
+// guessTheNumGame();
+//----------------------------------------------
+// multiplicationTable(6,10);
+//--------------------------------------------------
+// System.out.println(isPrime(2));
+//--------------------------------------------
+// int [] arr = inputputArray();
+// int max = arr[0];
+// for(int i = 1 ; i < arr.length ; i++){
+//     if(arr[i] > max){
+//         max = arr[i];
+//     }
+// }
+// System.out.println("Maximum value is  " + max);
+//---------------------------------------------------
+// int [] arr = inputputArray();
+// if (arr.length == 0){
+//         System.out.println("Array is empty , cannot find maximum value");
+// }else {
+//         int max = arr[0];
+//         for (int i : arr) {
+//             if( i > max) {
+//             max = i ;
+//             }
+//         }
+// System.out.println("hey , buddy your maximum value is "+ max);
+// }
+//---------------------------------------------------------------------------
+// int [] arr = inputputArray();
+// if (arr.length == 0){
+//         System.out.println("Array is empty , cannot find maximum value");
+// }else {
+//         int max = Integer.MIN_VALUE;
+//         for (int i : arr) {
+//             if( i > max) {
+//             max = i ;
+//             }
+//         }
+// System.out.println("hey , buddy your maximum value is "+ max);
+// }
+//--------------------------------------------------------------------------
+// int [] arr = inputputArray();
+// System.out.println("Now enter the number you wwant to find occurrences");
+// int num = input.nextInt();
+
+// if(arr.length == 0)  {
+//     System.out.println("Array is empty , cannot find occurrences");
+// } else {
+//     int occ = 0;
+//     for(int i : arr){
+//         if(i == num){
+//             occ ++;
+//         }
+//     }
+//     System.out.println("Number " + num + " occurs " + occ + " times in the array.");
+// }
+//-----------------------------------------------------------------------------
+// System.out.println("started");
+// exitOnExit();
+// System.out.println("ended");
+//-------------------------------------------------------------------------------
+// positiveSum();
+//--------------------------------------------------------------------
+onlyPrintEven();
+
 
 
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^   
 }//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+public static void onlyPrintEven(){
+    int [] numArr = inputputArray();
+    for ( int i : numArr) {
+        if ( i % 2 != 0){
+            continue;
+        }else {
+            System.out.print( i + " , ");
+        }
+
+    }
+
+}
 
 
 
 
+//--------------------------------------------------------------
+public static void positiveSum(){
+    int [] numArr = inputputArray();
+    int sum = 0 ;
+    for (int i : numArr){
+        if ( i < 0){
+            continue;
+        }
+        sum = sum +  i ;
+    }
+    System.out.println("The sum of positive numbers is : " + sum);
+}
+//---------------------------------------------------------------------
+public static void exitOnExit(){
 
+do {
+    System.out.println("tell me what you want to say");
+     String said = input.nextLine();
+    
+    if (said.equalsIgnoreCase("exit")){
+        break;
+    }
+}while (true);
+System.out.println("program ended.");
 
+}
+//-----------------------------------------------------------------
+public static boolean isPrime (int num){
+    if(num <= 1) return false;
+    for(int i = 2 ; i < num ; i++){
+        if(num % i == 0 ){
+            return false;
+        }
+    }
+    return true;
+}
+//--------------------------------------------------------------------
+public static void multiplicationTable (int num , int limit){
+    for(int i = 1 ;  i <= limit ; i++){
+        System.out.println(num + " X " + i + " = " + (num*i) );
+    }
+}
+//---------------------------------------------------------------
+public static void guessTheNumGame (){
+    int num;
+    do{
+        System.out.println("Guess a number here :");
+        num = input.nextInt();
+    }while(num != 101);
+    System.out.println("You gussed it ! Game over.");
+}
+//---------------------------------------------------------------------
+public static void isValidPassword(){
+    String password ;
+    do {
+        System.out.println("Please enter your password ");
+         password = input.next();
+    } while(!CheckPasswordStrength(password));
+    System.out.println("Thanks for entering a valid password .....");
+}
 
+public static boolean CheckPasswordStrength (String password)  {
+    
+    if (password.length() >= 5) {
+        return true;      
+    }else{
+        return false;
+    }
+}
+//---------------------------------------------------------
+public static long factorialR (int num) {
+    System.out.println("function called for " + num);
+    if (num == 1){
+        return 1 ;
+    }
+    return num * factorialR(num -1);
+}
+//-----------------------------------------------------------
+public static long factorial (int num){
+long result = 1 ;
+for (int i = 1 ;   i <= num ;   i++){
+    result = result * i ;
+}
+return result;
+}
+//----------------------------------------------------------------
 
+public  String monthName(int monthNum) {
+    return switch (monthNum) {
+        case 1 -> "January";
+        case 2 -> "February";
+        case 3 -> "March";
+        case 4 -> "April";
+        case 5 -> "May";
+        case 6 -> "June";
+        case 7 -> "July";
+        case 8 -> "August";
+        case 9 -> "September";
+        case 10 -> "October";
+        case 11 -> "November";
+        case 12 -> "December";
+        default -> "Unknown"; // Required for switch expressions
+    };
+}
+//---------------------------------------------------------------
+public int absoluteValue (int num){
+    return num >= 0 ? num : -num ;
+}
+//-----------------------------------------------------------------
+public String oddEven (int a ){
+    return a % 2 == 0  ? "Even" : "Odd" ;
+}
 
+//----------------------------------------------------------------------
+public  int min (int num1 , int num2){
+    return(num1 > num2) ? num2 :num1 ;
 
-
-
-
-
-
-
-
+}
 //------------------------------------------------------------------------
 public static long sum (int [] [] array ){
     long sum = 0 ;
