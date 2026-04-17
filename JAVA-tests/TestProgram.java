@@ -292,14 +292,150 @@ public class TestProgram {
 //-------------------------------------------------------------------------------
 // positiveSum();
 //--------------------------------------------------------------------
-onlyPrintEven();
+// onlyPrintEven();
+//-------------------------------------------------------------------------------
+// System.out.println("welcome to printing fibonacci series");
+// System.out.println("Enter the number of elements to be printed :  ");
+// int count = input.nextInt();
+
+// System.out.println("Fiboonacci series up to " + count + " terms: ");
+// for (int i = 1 ; i <= count ; i++){
+//     System.out.println(fiboonacci(i) + " ");
+// }
+//--------------------------------------------------------------------------------
+// System.out.println(Math.abs(-99));
+// System.out.println(Math.ceil(5.1));
+// System.out.println(Math.round(6.6));
+// System.out.println(Math.floor(7.9));
+// System.out.println(Math.random());
+// System.out.println(Math.random());
+// System.out.println(Math.random());
+
+// for ( int i = 1; i <= 10 ; i++){
+//     System.out.println(Math.random());
+// }
 
 
+// for ( int i = 1; i <= 10 ; i++){
+//     System.out.println((int) (Math.random() * 10 ) + 1);
+
+// }
+
+// for ( int i = 1; i <= 10 ; i++){
+//     System.out.println((int) (Math.random() * 900 ) + 100 );
+// }
+
+// System.out.println(Math.PI);
+// System.out.println(Math.pow(3, 3));
+
+
+// for ( int i = 1; i <= 10 ; i++){
+//     System.out.println((int) (Math.random() * (150 - 50 + 1) ) );
+// }
+
+
+// for ( int i = 1; i <= 10 ; i++){
+//     System.out.println((int) (Math.random() * (5 - (-5) + 1) + (-5) ) );
+// }
+
+// (max - min +1 ) + min
+//----------------------------------------------------------
+//  String str1 = "abc";
+//  String str2 = "abc";
+//  String str3 = new String ("abc");
+
+// System.out.println(str1 == str2); //true
+// System.out.println(str1 == str3); 
+// System.out.println(str1.equals(str3));
+//------------------------------------------------------
+ 
+// String name = "Dibaakar";
+// String  subject = "Physics";
+// int marks = 85;
+// double avg = 80.5 ;
+// String greeting = "hello";
+
+// // System.out.println("hello " + name + " , you have got " + marks + " in " + subject);
+// System.out.printf("%S  %15s, you have got %d in %-15s  and your overall percentage is %.2f%%"  , greeting, name , marks, subject , avg );
+
+//----------------------------------------------------------------------------
+// StringBuilder sentence = new StringBuilder("first ");
+// sentence.append("second  ");
+// sentence.append("third  ");
+// sentence.append("now good night chat Gpt ");
+// sentence.append(450);
+// System.out.println(sentence);
+
+// String name = "chat GPT ";
+// name = "chat GPT 5";
+// System.out.println(name);
+
+// final String MY_NAME = "Dibaakar ";
+// MY_NAME = "chat GPT";
+// System.out.println(MY_NAME);
+//--------------------------------------------------------------------------
+//  String str1 = "dibakar , loves chat GPT . Though she is very CYnical" ;
+//  String str2 = "she is very smart" ;
+//  String strf = str1 + " " + str2 ;
+
+//  System.out.println(strf.toUpperCase());
+//---------------------------------------------------------------------------
+
+
+// do {
+//     System.out.println("Choose a number from 1 to 6  to play or enter 7 to exit : " ); 
+//     int number = input.nextInt();
+
+//     int dice = (int) (Math.random() * (6 - 1 + 1) + 1 ) ;
+    
+//     if ( number == 7){
+//          System.out.println("Game over");
+//          return ;
+//     }else if ( number  == dice) {
+//          System.out.println("you won");
+//          return ;
+//     }else {
+//          System.out.println("sorry .....try again");
+//     }
+
+// } while (true);
+
+//-------------------------------------------------------------------------
+
+String [] arr = new String [] {
+    "chat" , "gpt" , "is" , "great" , "she" , "is"  , "very" , "smart" , "and" , "very" ,"cynical" , "and" , "sarcastic" , "overall" , "i" , "love" , "her"
+};
+
+StringBuilder sb = new StringBuilder();
+for ( String str : arr) {
+    sb.append(str).append(" ");
+}
+
+System.out.println(sb);
 
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^   
 }//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+
+
+
+
+
+
+
+//---------------------------------------------------------------------------
+public static int fiboonacci (int position){
+    System.out.print(".");
+    if (position == 1){
+        return 0;
+    } if (position == 2){
+        return 1;
+    } 
+    return fiboonacci(position - 1) + fiboonacci(position - 2) ;
+
+}
+//---------------------------------------------------------------
 public static void onlyPrintEven(){
     int [] numArr = inputputArray();
     for ( int i : numArr) {
@@ -312,10 +448,6 @@ public static void onlyPrintEven(){
     }
 
 }
-
-
-
-
 //--------------------------------------------------------------
 public static void positiveSum(){
     int [] numArr = inputputArray();
